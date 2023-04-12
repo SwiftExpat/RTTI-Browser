@@ -1,0 +1,73 @@
+object frmRttiBrowser: TfrmRttiBrowser
+  Left = 0
+  Top = 0
+  Caption = 'Rtti Browser FMX'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object TMSFNCToolBar1: TTMSFNCToolBar
+    Align = Top
+    Size.Width = 640.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    CompactBitmaps = <>
+    Font.Name = 'Segoe UI'
+    object btnTypes: TTMSFNCToolBarButton
+      Color = claNull
+      Position.X = 9.000000000000000000
+      Position.Y = 3.000000000000000000
+      Size.Width = 112.000000000000000000
+      Size.Height = 24.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Font.Name = 'Segoe UI'
+      Text = 'Types'
+      Bitmaps = <>
+      LargeLayoutBitmaps = <>
+      DisabledBitmaps = <>
+      HoverBitmaps = <>
+      LargeLayoutDisabledBitmaps = <>
+      LargeLayoutHoverBitmaps = <>
+      ControlIndex = 0
+    end
+    object btnValues: TTMSFNCToolBarButton
+      Color = claNull
+      Position.X = 124.000000000000000000
+      Position.Y = 3.000000000000000000
+      Size.Width = 95.000000000000000000
+      Size.Height = 24.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      OnClick = btnValuesClick
+      Font.Name = 'Segoe UI'
+      Text = 'Values'
+      Bitmaps = <>
+      LargeLayoutBitmaps = <>
+      DisabledBitmaps = <>
+      HoverBitmaps = <>
+      LargeLayoutDisabledBitmaps = <>
+      LargeLayoutHoverBitmaps = <>
+      ControlIndex = 1
+    end
+  end
+  object Memo1: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    Lines.Strings = (
+      
+        'Click on the buttons above to show the forms for RTTI types and ' +
+        'values.'
+      'The values are loaded from a RTTI Test model class.')
+    Align = Client
+    Size.Width = 640.000000000000000000
+    Size.Height = 450.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Viewport.Width = 636.000000000000000000
+    Viewport.Height = 446.000000000000000000
+  end
+end
