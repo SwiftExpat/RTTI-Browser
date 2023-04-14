@@ -1,0 +1,299 @@
+object frmRTTIBrowser: TfrmRTTIBrowser
+  Left = 0
+  Top = 0
+  Caption = 'RTTI Browser FMX'
+  ClientHeight = 576
+  ClientWidth = 732
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  DesignerMasterStyle = 0
+  object tv: TTMSFNCTreeView
+    Align = Top
+    Position.Y = 30.000000000000000000
+    Size.Width = 732.000000000000000000
+    Size.Height = 395.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Stroke.Color = claDarkgray
+    Groups = <>
+    GroupsAppearance.TopSize = 50.000000000000000000
+    GroupsAppearance.BottomSize = 50.000000000000000000
+    GroupsAppearance.TopFill.Kind = gfkNone
+    GroupsAppearance.BottomFill.Kind = gfkNone
+    GroupsAppearance.TopFont.Color = xFF454545
+    GroupsAppearance.TopFont.Name = 'Segoe UI'
+    GroupsAppearance.BottomFont.Color = xFF454545
+    GroupsAppearance.BottomFont.Name = 'Segoe UI'
+    Columns = <
+      item
+        Name = 'Column0'
+        Text = 'Name'
+        Width = 100.000000000000000000
+        Font.Name = 'Segoe UI'
+        TopFont.Name = 'Segoe UI'
+        BottomFont.Name = 'Segoe UI'
+        Filtering.Enabled = True
+        Filtering.MultiColumn = True
+      end
+      item
+        Name = 'Column1'
+        Text = 'Unit'
+        HorizontalTextAlign = gtaTrailing
+        Width = 120.000000000000000000
+        Font.Name = 'Segoe UI'
+        TopFont.Name = 'Segoe UI'
+        BottomFont.Name = 'Segoe UI'
+        Filtering.Enabled = True
+        Filtering.MultiColumn = True
+      end
+      item
+        Name = 'Column2'
+        Text = 'UnitName'
+        HorizontalTextAlign = gtaCenter
+        Width = 120.000000000000000000
+        Font.Name = 'Segoe UI'
+        TopFont.Name = 'Segoe UI'
+        BottomFont.Name = 'Segoe UI'
+        Filtering.Enabled = True
+        Filtering.MultiColumn = True
+      end>
+    Nodes = <
+      item
+        Values = <
+          item
+            Text = 'unit'
+          end
+          item
+            Text = 'other'
+          end
+          item
+            Text = 'now'
+          end>
+        Tag = 0
+        Nodes = <>
+      end>
+    ColumnsAppearance.StretchColumn = 0
+    ColumnsAppearance.StretchAll = False
+    ColumnsAppearance.TopSize = 36.000000000000000000
+    ColumnsAppearance.BottomSize = 25.000000000000000000
+    ColumnsAppearance.TopFont.Size = 14.000000000000000000
+    ColumnsAppearance.TopFont.Color = xFF454545
+    ColumnsAppearance.TopFont.Name = 'Segoe UI'
+    ColumnsAppearance.TopFont.StyleExt = {00070000000000000004000000}
+    ColumnsAppearance.BottomFont.Color = xFF454545
+    ColumnsAppearance.BottomFont.Name = 'Segoe UI'
+    ColumnsAppearance.TopFill.Color = xFFEEF2F9
+    ColumnsAppearance.BottomFill.Kind = gfkNone
+    ColumnsAppearance.BottomFill.Color = xFFEEF2F9
+    ColumnsAppearance.TopStroke.Kind = gskNone
+    NodesAppearance.ShowFocus = False
+    NodesAppearance.ExpandWidth = 18.000000000000000000
+    NodesAppearance.ExpandHeight = 18.000000000000000000
+    NodesAppearance.LevelIndent = 20.000000000000000000
+    NodesAppearance.FixedHeight = 25.000000000000000000
+    NodesAppearance.VariableMinimumHeight = 25.000000000000000000
+    NodesAppearance.Font.Color = xFF7A7A7A
+    NodesAppearance.Font.Name = 'Segoe UI'
+    NodesAppearance.TitleFont.Name = 'Segoe UI'
+    NodesAppearance.SelectedFontColor = xFF454545
+    NodesAppearance.ExtendedFontColor = xFF454545
+    NodesAppearance.SelectedFill.Color = xFFF6F8FC
+    NodesAppearance.SelectedStroke.Color = xFF2D9BEF
+    NodesAppearance.SelectedStroke.Width = 2.000000000000000000
+    NodesAppearance.ExtendedFont.Name = 'Segoe UI'
+    NodesAppearance.ExpandNodeIcon.PNG = {
+      89504E470D0A1A0A0000000D494844520000000B0000000B0806000000A9AC77
+      26000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+      004B49444154285363ACAEADFECF402C0029260680D43141F5A0006F3F6F280B
+      1560558C0B90A498054A63588DCCDFBA692B98862B860980004821321F0668E7
+      66AC8AB1390104488841060600EED939BB858B0ECD0000000049454E44AE4260
+      82}
+    NodesAppearance.CollapseNodeIcon.PNG = {
+      89504E470D0A1A0A0000000D494844520000000B0000000B0806000000A9AC77
+      26000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+      003A49444154285363ACAEADFECF402C0029260680D43141F5100568A798054A
+      8381B79F379485005B376D85B2D014234B600383C48324C420030300D49232D7
+      2010A6750000000049454E44AE426082}
+    NodesAppearance.ExpandNodeIconLarge.PNG = {
+      89504E470D0A1A0A0000000D4948445200000016000000160806000000C4B46C
+      3B000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+      006849444154484B63ACAEADFECF4003C004A5A90EE02E6E696A010B500A6AEA
+      6AC034CD5C4CB4C1DE7EDE604C2C187817930A460D860316280D0784621E97FC
+      D64D5BA12C08A09F8BD16D8601984B71C9A383D1540107C3D860506A20364580
+      00CD5C3CD4EA3C060600D2401984154F98460000000049454E44AE426082}
+    NodesAppearance.CollapseNodeIconLarge.PNG = {
+      89504E470D0A1A0A0000000D4948445200000016000000160806000000C4B46C
+      3B000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+      005149444154484B63ACAEADFECF4003C004A5A90EE02E6E696A010B500A6AEA
+      6AC034CD5C3C6A301C8C1A0C072C501A0378FB794359F8C1D64D5BA12C544033
+      178FE63C381835180E869EC143ADCE636000009C2E12F3AF5420C80000000049
+      454E44AE426082}
+    Interaction.AnimationFactor = 1.100000023841858000
+    Interaction.ColumnSizing = True
+    Interaction.ColumnAutoSizeOnDblClick = True
+    StretchScrollBars = False
+    GlobalFont.Name = 'Segoe UI'
+    GlobalFont.Scale = 1.000000000000000000
+    GlobalFont.Style = []
+    OnNodeClick = tvNodeClick
+    DefaultViewJSONOptions.NameHTMLTemplate = '<#NAME>'
+    DefaultViewJSONOptions.ValueHTMLTemplate = '<#VALUE>'
+  end
+  object TMSFNCStatusBar1: TTMSFNCStatusBar
+    Position.Y = 556.000000000000000000
+    Size.Width = 732.000000000000000000
+    Size.Height = 20.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Panels = <>
+    PanelAppearance.Font.Name = 'Segoe UI'
+  end
+  object TMSFNCToolBar1: TTMSFNCToolBar
+    Align = Top
+    Size.Width = 732.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    CompactBitmaps = <>
+    Font.Name = 'Segoe UI'
+    object TMSFNCToolBarButton1: TTMSFNCToolBarButton
+      Position.X = 9.000000000000000000
+      Position.Y = 3.000000000000000000
+      Size.Width = 30.000000000000000000
+      Size.Height = 24.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      OnClick = TMSFNCToolBarButton1Click
+      Font.Name = 'Segoe UI'
+      Bitmaps = <>
+      LargeLayoutBitmaps = <>
+      DisabledBitmaps = <>
+      HoverBitmaps = <>
+      LargeLayoutDisabledBitmaps = <>
+      LargeLayoutHoverBitmaps = <>
+      ControlIndex = 0
+    end
+  end
+  object Timer1: TTimer
+    Left = 512
+    Top = 344
+  end
+  object TMSFNCSplitter1: TTMSFNCSplitter
+    Align = Top
+    Position.Y = 425.000000000000000000
+    Size.Width = 732.000000000000000000
+    Size.Height = 10.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    MinSize = 20.000000000000000000
+  end
+  object tvDetail: TTMSFNCTreeView
+    Align = Client
+    Size.Width = 732.000000000000000000
+    Size.Height = 121.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+    Stroke.Color = claDarkgray
+    Groups = <>
+    GroupsAppearance.TopSize = 50.000000000000000000
+    GroupsAppearance.BottomSize = 50.000000000000000000
+    GroupsAppearance.TopFill.Kind = gfkNone
+    GroupsAppearance.BottomFill.Kind = gfkNone
+    GroupsAppearance.TopFont.Color = xFF454545
+    GroupsAppearance.TopFont.Name = 'Segoe UI'
+    GroupsAppearance.BottomFont.Color = xFF454545
+    GroupsAppearance.BottomFont.Name = 'Segoe UI'
+    Columns = <
+      item
+        Name = 'Column0'
+        Text = 'Name'
+        Width = 100.000000000000000000
+        Font.Name = 'Segoe UI'
+        TopFont.Name = 'Segoe UI'
+        BottomFont.Name = 'Segoe UI'
+      end
+      item
+        Name = 'Column1'
+        Text = 'Unit'
+        HorizontalTextAlign = gtaTrailing
+        Width = 90.000000000000000000
+        Font.Name = 'Segoe UI'
+        TopFont.Name = 'Segoe UI'
+        BottomFont.Name = 'Segoe UI'
+      end
+      item
+        Name = 'Column2'
+        Text = 'Status'
+        HorizontalTextAlign = gtaCenter
+        Width = 80.000000000000000000
+        Font.Name = 'Segoe UI'
+        TopFont.Name = 'Segoe UI'
+        BottomFont.Name = 'Segoe UI'
+      end>
+    Nodes = <>
+    ColumnsAppearance.StretchColumn = 0
+    ColumnsAppearance.StretchAll = False
+    ColumnsAppearance.TopSize = 36.000000000000000000
+    ColumnsAppearance.BottomSize = 25.000000000000000000
+    ColumnsAppearance.TopFont.Size = 14.000000000000000000
+    ColumnsAppearance.TopFont.Color = xFF454545
+    ColumnsAppearance.TopFont.Name = 'Segoe UI'
+    ColumnsAppearance.TopFont.StyleExt = {00070000000000000004000000}
+    ColumnsAppearance.BottomFont.Color = xFF454545
+    ColumnsAppearance.BottomFont.Name = 'Segoe UI'
+    ColumnsAppearance.TopFill.Color = xFFEEF2F9
+    ColumnsAppearance.BottomFill.Kind = gfkNone
+    ColumnsAppearance.BottomFill.Color = xFFEEF2F9
+    ColumnsAppearance.TopStroke.Kind = gskNone
+    NodesAppearance.ShowFocus = False
+    NodesAppearance.ExpandWidth = 18.000000000000000000
+    NodesAppearance.ExpandHeight = 18.000000000000000000
+    NodesAppearance.LevelIndent = 20.000000000000000000
+    NodesAppearance.FixedHeight = 25.000000000000000000
+    NodesAppearance.VariableMinimumHeight = 25.000000000000000000
+    NodesAppearance.Font.Color = xFF7A7A7A
+    NodesAppearance.Font.Name = 'Segoe UI'
+    NodesAppearance.TitleFont.Name = 'Segoe UI'
+    NodesAppearance.SelectedFontColor = xFF454545
+    NodesAppearance.ExtendedFontColor = xFF454545
+    NodesAppearance.SelectedFill.Color = xFFF6F8FC
+    NodesAppearance.SelectedStroke.Color = xFF2D9BEF
+    NodesAppearance.SelectedStroke.Width = 2.000000000000000000
+    NodesAppearance.ExtendedFont.Name = 'Segoe UI'
+    NodesAppearance.ExpandNodeIcon.PNG = {
+      89504E470D0A1A0A0000000D494844520000000B0000000B0806000000A9AC77
+      26000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+      004B49444154285363ACAEADFECF402C0029260680D43141F5A0006F3F6F280B
+      1560558C0B90A498054A63588DCCDFBA692B98862B860980004821321F0668E7
+      66AC8AB1390104488841060600EED939BB858B0ECD0000000049454E44AE4260
+      82}
+    NodesAppearance.CollapseNodeIcon.PNG = {
+      89504E470D0A1A0A0000000D494844520000000B0000000B0806000000A9AC77
+      26000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+      003A49444154285363ACAEADFECF402C0029260680D43141F5100568A798054A
+      8381B79F379485005B376D85B2D014234B600383C48324C420030300D49232D7
+      2010A6750000000049454E44AE426082}
+    NodesAppearance.ExpandNodeIconLarge.PNG = {
+      89504E470D0A1A0A0000000D4948445200000016000000160806000000C4B46C
+      3B000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+      006849444154484B63ACAEADFECF4003C004A5A90EE02E6E696A010B500A6AEA
+      6AC034CD5C4CB4C1DE7EDE604C2C187817930A460D860316280D0784621E97FC
+      D64D5BA12C08A09F8BD16D8601984B71C9A383D1540107C3D860506A20364580
+      00CD5C3CD4EA3C060600D2401984154F98460000000049454E44AE426082}
+    NodesAppearance.CollapseNodeIconLarge.PNG = {
+      89504E470D0A1A0A0000000D4948445200000016000000160806000000C4B46C
+      3B000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+      005149444154484B63ACAEADFECF4003C004A5A90EE02E6E696A010B500A6AEA
+      6AC034CD5C3C6A301C8C1A0C072C501A0378FB794359F8C1D64D5BA12C544033
+      178FE63C381835180E869EC143ADCE636000009C2E12F3AF5420C80000000049
+      454E44AE426082}
+    GlobalFont.Name = 'Segoe UI'
+    GlobalFont.Scale = 1.000000000000000000
+    GlobalFont.Style = []
+    DefaultViewJSONOptions.NameHTMLTemplate = '<#NAME>'
+    DefaultViewJSONOptions.ValueHTMLTemplate = '<#VALUE>'
+  end
+end
